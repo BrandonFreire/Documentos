@@ -100,6 +100,7 @@ autocompletado:                 *tab*
 
  para subir todos los archivos:  *git add .*
 
+<<<<<<< HEAD
  guardar cambios: *git commit*
 
  cear archivo: *touch*
@@ -114,3 +115,10 @@ para crear archivo con su nombre: *touch name.txt*
 
 *Fecha: 13/11/2023*
 
+=======
+# Clase 4
+
+ *Fecha: 13/11/2023*
+
+ 
+>>>>>>> config
