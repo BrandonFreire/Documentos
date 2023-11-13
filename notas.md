@@ -74,7 +74,13 @@ El kernel de MacOs se basa o es linux
 
                       cd/home/usuario/proyecto_git 
 
-                      ls -l
+listar:                      *ls -l*
+
+ubicacion de las carpetas(directorio actual):               *pwd*
+
+directorio: *ls*
+
+mostrar lo que hay dentro de un archivo:  *cat*
 
 ### Comando git
 
@@ -90,10 +96,21 @@ permite agregar archivos, archivos que no estan siendo respaldados:             
 
 como esta el estado en el background:                                                 *git status*
 
-autocompletado                  *tab*
+autocompletado:                 *tab*
 
  para subir todos los archivos:  *git add .*
 
- 
+ guardar cambios: *git commit*
 
+ cear archivo: *touch*
+
+ crear un archivo y escribir dentro de el: *echo "hola" > file.txt*
+
+para abrir un archivo pero no en la terminal: *code .gitignore*
+
+para crear archivo con su nombre: *touch name.txt*
+
+# Clase 4
+
+*Fecha: 13/11/2023*
 
