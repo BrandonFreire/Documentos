@@ -94,6 +94,8 @@ autocompletado                  *tab*
 
  para subir todos los archivos:  *git add .*
 
+# Clase 4
+
+ *Fecha: 13/11/2023*
+
  
-
-
