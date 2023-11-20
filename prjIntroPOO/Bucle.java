@@ -54,7 +54,7 @@ public class Bucle{
          */
         nombre=float1.toString();
         nombre=numero.toString();
-        nomre.charAt(1);
+        nombre.charAt(1);
 
     }
 
