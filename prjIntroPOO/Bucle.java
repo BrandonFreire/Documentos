@@ -33,17 +33,17 @@ public class Bucle{
 
     public void tipoDato(){
         //Datos primitivos 
-        char letra 'a';
+        char letra ='a';
         letra=54; //al asignar un numero, considera que se le esta asginando un valor de la tabla asci
         short edad= 32;
         int num = 321;
-        long numeroLong = 9874316286;
+        long numeroLong = 98743;
         float peso= 1.7f;
         double altura= 1.8d;
         boolean esMayorDeEdad = (i==2);
-        boolean esMayorDeEdad = 0;
+        //boolean esMayorDeEdad = 0;
 
-        num = (float) precio;
+        //num = (float) peso;
         
         //datos objeto
         String nombre="122544";
