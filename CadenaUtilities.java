@@ -21,6 +21,13 @@ public class CadenaUtilities {
         System.out.println("[+] operaciones string");
         int len = str.length();
         System.out.println("Longitud de la cadena: "+len);
+
+        char  c = str,charAt(1);
+        String s = c.toString();
+        System.out.println("chatAt(): El caracter en el indice 1 es: "+c);
+        System.out.println("c.tostring(): El caracter en el indice 1 es: "+s);
+        
+
         
 
 
