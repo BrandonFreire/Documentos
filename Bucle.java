@@ -33,12 +33,13 @@ public class Bucle{
 
     public void tipoDato(){
         //Datos primitivos 
-        char letra 'a';
+        char letra = 'a';
         letra=54; //al asignar un numero, considera que se le esta asginando un valor de la tabla asci
         short edad= 32;
         int num = 321;
-        long numeroLong = 9874316286;
-        float peso= 1.7f;
+        long numeroLong = 98786;
+        long l = 10L;  //L esta separando un valor "grande" de memoria
+        float peso= 1.7f; //letras al final para manejar tipos de datos
         double altura= 1.8d;
         boolean esMayorDeEdad = (i==2);
         boolean esMayorDeEdad = 0;
