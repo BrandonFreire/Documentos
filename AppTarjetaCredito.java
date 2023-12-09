@@ -12,6 +12,5 @@ public class AppTarjetaCredito {
         System.out.println(tarjetaCredito.getNumeroTarjeta());
         //Fecha
         
-
     }
 }
