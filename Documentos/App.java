@@ -7,15 +7,15 @@ public class App {
         oMujer1 = new Mujer(); //se usa la palabra new y se da el proceso de instanciación(es decirle que es al programa, en este caso es un objeto)
         
         System.out.println("Mujer 1: ");
-        oMujer1.saludar();
-        oMujer1.cantar();
-        oMujer1.bailar();
+        //oMujer1.saludar();
+        //oMujer1.cantar();
+        //oMujer1.bailar();
         
-        System.out.println("Mujer 2: ");
-        Mujer oMujer2;
-        oMujer2 = new Mujer();
-        oMujer2.nombre="Maria";
-        oMujer2.saludar();
+        //System.out.println("Mujer 2: ");
+        //Mujer oMujer2;
+        //oMujer2 = new Mujer();
+        //oMujer2.nombre="Maria";
+        //oMujer2.saludar();
     }
     
 }    

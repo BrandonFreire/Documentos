@@ -21,4 +21,27 @@ public class Mujer{
     public void bailar(){
         System.out.println("Bailo con pasos elegantes y lindos movimientos");   
     } 
+
+    public void saludarMujer(){
+        System.out.println("Hola, soy una mujer y me llamo " + nombre);
+        
+        System.out.println("¿Cual es tu nombre?");
+        String nombre = App.scApp.nextLine();
+        System.out.println("Binvenido a mu casa: "+nombre);
+
+        System.out.println("¿Cual es tu edad?");
+        edad = sc.nextLine();
+        System.out.println("Tu edad es: "+edad);
+
+        int resto = edad % 3;
+        if (resto == 0){
+            System.out.println("Tu edad es multiplo de 3.");
+        }else{
+            System.out.println("Tu edad no es multiplo de 3.");
+        }
+        String sim[] = {"/","|","-","\\"," "};
+        for(int i = 0; i < 100 ; i++){
+            
+        }
+    }  
 }

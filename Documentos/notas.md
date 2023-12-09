@@ -129,7 +129,7 @@ craer
 
 
 
-## Comandos terminal
+## Comandos terminal y git
 
 - acceder a todos los directorios: ls
 - volver hacia atras: cd ..
@@ -218,6 +218,8 @@ Tiene tres posibilidades que son: public (para todos, todos lo pueden ver, tiene
 
 (aquel que construye el objeto)
 instancia= {crear -> utilizar un constructor - new(luego llamarlo, new lo llama)}
+
+- el punto rojo que aparece al lado de cada linea de codigo se llama punto de corte para poder detener desde ahi el programa y poderlo arrancar
 
 ## objetos
 
