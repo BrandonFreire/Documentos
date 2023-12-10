@@ -5,7 +5,7 @@ public class AppTarjetaCredito {
         Tarjeta_Credito tarjetaCredito = new Tarjeta_Credito();
         Scanner sc = new Scanner(System.in);
         //Nombre usuario
-        tarjetaCredito.setNombreUsuario("Brandon Freire");
+        tarjetaCredito.setNombreUsuario("Ismael Freire");
         System.out.println(tarjetaCredito.getNombreUsuario());
         //Numero de tarjeta
         tarjetaCredito.setNumeroTarjeta("0123456789123478");
