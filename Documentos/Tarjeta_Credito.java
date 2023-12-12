@@ -10,7 +10,6 @@ public class Tarjeta_Credito {
     private String banco;
     private String tipoTC;
     private String CVV;
-    //private String dato;
     private String clave;
 
     //METODOS
@@ -100,13 +99,18 @@ public class Tarjeta_Credito {
 
     // getter/setter de clave
     public String getClave(){
-        return clave;
+        return this.clave.replaceAll(".","*");
     }
     public void setClave(String clave){
-        if (clave.length() > 0) {
-            if (clave.equals("1234")) {
+        Scanner ingresarDat = new Scanner(System.in);
+        if (clave.length() > 0 && clave.length()<7) {
+            /*if (clave.equals("1234")) {
                 this.clave = clave;
-            }
+            }*/
+            this.clave=clave;
+        }else{
+            System.out.println("Ha excedido la cantidad maxima de caracteres para la clave"+"\nVuelva a ingresarla");
+            this.clave = ingresarDat.nextLine();
         }
     }
 
@@ -124,7 +128,6 @@ public class Tarjeta_Credito {
         }
     }
 
-    
     // gettet/setter de banco
     public String getBanco(){
         return this.banco.toUpperCase();
@@ -189,6 +192,11 @@ public class Tarjeta_Credito {
         System.out.println("Ingrese el numero de su tarjeta");
         setNumeroTarjeta(ingreso.nextLine());
         System.out.println(getNumeroTarjeta());
+
+        //ingresar la clave
+        System.out.println("Ingrese su clave personal para la tarjeta");
+        setClave(ingreso.nextLine());
+        System.out.println(getClave());
 
         //ingresar fecha de expedicion 
         System.out.println("Ingrese el año de expedicion de su tarjeta");
