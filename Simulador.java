@@ -44,12 +44,13 @@ public class Simulador {
             System.out.print(coordenadasX[i] + " ");
         }
     }*/
-    public static void main(String[] args) {
+
+    /*public static void main(String[] args) {
         //int tamMatriz = 8;
         grafico();
         
     }
-    /*public static void grafico(){
+    public static void grafico(){
         String nombre= "brandon";
         int tamMatriz = nombre.length();
         char[] letras = nombre.toCharArray();
@@ -69,7 +70,7 @@ public class Simulador {
         }
     }*/
 
-    public static void grafico() {
+    /*public static void grafico() {
         String nombre = "brandon";
         int tamMatriz = nombre.length();
     
@@ -90,6 +91,42 @@ public class Simulador {
         for (int i = 2; i <= tamMatriz * 2; i += 2) {
             System.out.print(" _");
         }
-    }
+    }*/
+
+
+        public static void main (String[] args) {
+            formarX("Ismael Freire");
+        }
+    
+        public static void formarX(String nombreCompleto) {
+            char[] caracteres = nombreCompleto.toCharArray();
+            int longitud = caracteres.length;
+    
+            // Crear una matriz para almacenar el patrón de X
+            char[][] matrizX = new char[longitud][longitud];
+    
+            // Inicializar la matriz con espacios en blanco
+            for (int i = 0; i < longitud; i++) {
+                for (int j = 0; j < longitud; j++) {
+                    matrizX[i][j] = ' ';
+                }
+            }
+    
+            // Llenar la matriz con el patrón de X
+            for (int i = 0; i < longitud; i++) {
+                matrizX[i][i] = caracteres[i];
+                matrizX[i][longitud - 1 - i] = caracteres[i];
+            }
+    
+            // Imprimir la matriz
+            for (int i = 0; i < longitud; i++) {
+                for (int j = 0; j < longitud; j++) {
+                    System.out.print(matrizX[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+    
+    
     
 }

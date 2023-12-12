@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Tarjeta_Credito {
     //Atributos de la clase tarjeta credito.
     private String nombreUsuario;
@@ -47,8 +49,21 @@ public class Tarjeta_Credito {
         }
     }
 
+
+    //METODOS
+    public void crearTC(){
+        Scanner ingreso = new Scanner(System.in);
+        String nombre;
+        System.out.println("Ingrese su nombre");
+        nombre = ingreso.nextLine();
+        setNombreUsuario(nombre);
+        //System.out.println("\nCreando TarjetaCredito...");
+        ingreso.close();
+    }
+
+
     // getter/setter de Dato
-    public void setDato(String dato){
+    /*public void setDato(String dato){
         if (dato.length() > 0) {
             if (dato.equals("xyz")) {
                 this.dato = dato;
@@ -58,5 +73,5 @@ public class Tarjeta_Credito {
     }
     public String getDato(){
         return dato.toUpperCase().substring(4);
-    }
+    }*/
 }
