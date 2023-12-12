@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Calendar;
 
 public class Tarjeta_Credito {
     //Atributos de la clase tarjeta credito.
@@ -28,6 +29,7 @@ public class Tarjeta_Credito {
         return this.numeroTarjeta;
     }
     public void setNumeroTarjeta(String numeroTarjeta){
+        Scanner ingresoDat = new Scanner(System.in);
         if (numeroTarjeta.length()==16) {
             String part1= numeroTarjeta.substring(0, 4);
             String part2= numeroTarjeta.substring(4, 8);
@@ -35,7 +37,8 @@ public class Tarjeta_Credito {
             String part4= numeroTarjeta.substring(12, 16);
             this.numeroTarjeta=(part1+"-"+part2+"-"+part3+"-"+part4);
         }else{
-            this.numeroTarjeta="Numero de tarjeta incorrecto";
+            System.out.println("Numero de tarjeta incorrecto"+"\nIngrese nuevamente el numero de tarjeta");
+            this.numeroTarjeta= ingresoDat.nextLine();
         }
     }
 
@@ -44,26 +47,53 @@ public class Tarjeta_Credito {
         return this.fechaExpedicion;
     }
     public void setFechaExpedicion(String fechaExpedicion){
-        this.fechaExpedicion=fechaExpedicion;
+        Scanner ingresoDat = new Scanner(System.in);
+        int enteroFecha = Integer.parseInt(fechaExpedicion);
+        if (enteroFecha < 2010 || enteroFecha > 2023) {
+            System.out.println("Ha ingresado incorrectamente el año de EXPEDICION de su tarjeta"+"\nIngrese nuevamente el año:");
+            this.fechaExpedicion = ingresoDat.nextLine();              
+        }else{
+            this.fechaExpedicion=fechaExpedicion;
+        }        
     }
-
+    
     // getter/setter de fecha de expiracion
     public String getFechaExpiracion(){
         return this.fechaExpiracion;
     }
     public void setFechaExpiracion(String fechaExpiracion){
         String dia,mes,anio;
+        Calendar calendario = Calendar.getInstance();
+        int anioActual = calendario.get(Calendar.YEAR);
+        int mesActual = calendario.get(Calendar.MONTH) + 1;     
         String[] fechaPartes = fechaExpiracion.split("/");
-        if (fechaPartes.length==3) {
+        if ( fechaPartes.length==3 ) {
             dia = fechaPartes[0];
             mes = fechaPartes[1];
-            anio = fechaPartes[3];
-                         
-        }else if (fechaPartes.length ==2) {
+            anio = fechaPartes[2];
+            int enteroMes = Integer.parseInt(mes);
+            int enteroAnio = Integer.parseInt(anio);
+            if ((enteroAnio < anioActual || (enteroAnio == anioActual && enteroMes < mesActual)) && enteroAnio <= 2023) {
+                this.fechaExpiracion = "Su tarjeta ha expirado";
+            }else{
+                this.fechaExpiracion = fechaExpiracion;
+            }
+            /*if (fechaPartes[2].equals("2023")) {
+                this.fechaExpiracion = "Su tarjeta ha expirado";
+            }else{
+                this.fechaExpiracion = fechaExpiracion;
+            }*/
+        }else if ( fechaPartes.length==2 ) {
             mes = fechaPartes[0];
             anio = fechaPartes[1];
+            if (fechaPartes[1].equals("2023")) {
+                this.fechaExpiracion = "Su tarjeta ha expirado";
+            }else{
+                this.fechaExpiracion = fechaExpiracion;
+            }     
+        }else{
+            System.out.println("Error en la introduccion de la fecha de expiración.");
         }
-        //this.fechaExpiracion=fechaExpiracion;
     }    
 
     // getter/setter de clave
@@ -108,18 +138,26 @@ public class Tarjeta_Credito {
         System.out.println("Ingrese el numero de su tarjeta");
         numeroTC = ingreso.nextLine();
         setNumeroTarjeta(numeroTC);
-        //-----System.out.println(getNumeroTarjeta());
+        System.out.println(getNumeroTarjeta());
 
         //ingresar fecha de expedicion 
-        System.out.println("Ingrese la fecha de expedicion de su tarjeta");
+        System.out.println("Ingrese el año de expedicion de su tarjeta");
         fechaExpericacioString = ingreso.nextLine();
         setFechaExpedicion(fechaExpericacioString);
+        System.out.println(getFechaExpedicion());
+        /*System.out.println("Ingrese el año de expedicion de su tarjeta");
+        fechaExpericacioString = ingreso.nextLine();
+        
+        System.out.println("Antes de setFechaExpedicion: " + fechaExpericacioString);
+        setFechaExpedicion(fechaExpericacioString);
+        System.out.println("Después de setFechaExpedicion: " + getFechaExpedicion());*/
+                
 
         //ingresar fecha de expiracion
-        String mes;
         System.out.println("Ingrese la fecha de expiracion de su tarjeta en el siguiente formato (mm/aa) o (dd/mm/aa)");
         fechaExpiracionString = ingreso.nextLine();
         setFechaExpiracion(fechaExpiracionString);
+        System.out.println(getFechaExpiracion());
 
 
 
