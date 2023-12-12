@@ -7,9 +7,11 @@ public class Tarjeta_Credito {
     private String numeroTarjeta;
     private String fechaExpedicion;
     private String fechaExpiracion;
+    private String banco;
+    private String tipoTC;
+    private String CVV;
     //private String dato;
     private String clave;
-    private String Date;
 
     //METODOS
     // getter/setter de NombreUsuario
@@ -108,6 +110,48 @@ public class Tarjeta_Credito {
         }
     }
 
+    // getter/setter de CVV
+    public String getCVV(){
+        return this.CVV;
+    }
+    public void setCVV(String CVV){
+        Scanner ingresoDat = new Scanner(System.in);
+        if (CVV.length()==3) {
+            this.CVV = CVV;
+        }else{
+            System.out.println("Codigo CVV incorrecto"+"\nVuelva a ingresarlo");
+            this.CVV= ingresoDat.nextLine();
+        }
+    }
+
+    
+    // gettet/setter de banco
+    public String getBanco(){
+        return this.banco.toUpperCase();
+    }
+    public void setBanco(String banco){
+        Scanner ingresoDat = new Scanner(System.in);
+        if (banco.length()==9) {
+            this.banco="Pichincha";
+        }else{
+            System.out.println("Banco ingresado es incorrecto, por favor intente nuevamente:");
+            this.banco=ingresoDat.nextLine();
+        }
+        
+    }
+
+    // getter/setter de tipo de tarjeta de credito
+    public String getTipoTC(){
+        return this.tipoTC.toUpperCase();
+    }
+    public void setTipoTc(String tipoTC){
+        tipoTC = tipoTC.toLowerCase();
+        if (tipoTC.equals("visa")) {
+            this.tipoTC = tipoTC;
+        }else{
+            System.out.println("El tipo de Tarjeta de Credito no es valido, solo se admiten VISA.");
+        }
+    }
 
     // getter/setter de Dato
     /*public void setDato(String dato){
@@ -121,18 +165,31 @@ public class Tarjeta_Credito {
     public String getDato(){
         return dato.toUpperCase().substring(4);
     }*/
+    
+    
     public void crearTC() {
         Scanner ingreso = new Scanner(System.in);
         String nombre;
         String numeroTC;
         String fechaExpericacioString;
         String fechaExpiracionString;
+        String CVV;
+
+        //ingresar banco
+        System.out.println("Ingrese el nombre de su banco");
+        setBanco(ingreso.nextLine());
+        System.out.println(getBanco());
+
+        //ingresar tipo de tarjeta
+        System.out.println("Ingrese el tipo de tarjeta");
+        setTipoTc(ingreso.nextLine());
+        System.out.println(getTipoTC());
 
         //ingresar nombre
-        System.out.println("Ingrese su nombre");
+        System.out.println("Ingrese el nombre del titular de la tarjeta");
         nombre = ingreso.nextLine();
         setNombreUsuario(nombre);
-        //-----System.out.println(getNombreUsuario());
+        System.out.println(getNombreUsuario());
 
         //ingresar numero de tarjeta 
         System.out.println("Ingrese el numero de su tarjeta");
@@ -145,13 +202,6 @@ public class Tarjeta_Credito {
         fechaExpericacioString = ingreso.nextLine();
         setFechaExpedicion(fechaExpericacioString);
         System.out.println(getFechaExpedicion());
-        /*System.out.println("Ingrese el año de expedicion de su tarjeta");
-        fechaExpericacioString = ingreso.nextLine();
-        
-        System.out.println("Antes de setFechaExpedicion: " + fechaExpericacioString);
-        setFechaExpedicion(fechaExpericacioString);
-        System.out.println("Después de setFechaExpedicion: " + getFechaExpedicion());*/
-                
 
         //ingresar fecha de expiracion
         System.out.println("Ingrese la fecha de expiracion de su tarjeta en el siguiente formato (mm/aa) o (dd/mm/aa)");
@@ -159,10 +209,22 @@ public class Tarjeta_Credito {
         setFechaExpiracion(fechaExpiracionString);
         System.out.println(getFechaExpiracion());
 
+        //ingreso codigo CVV
+        System.out.println("Ingrese el codigo cvv de la tarjeta:");
+        CVV = ingreso.nextLine();
+        setCVV(CVV);
+        System.out.println(getCVV());
 
+        System.out.println("\nCreando TarjetaCredito...");
+        for(int i=0 ; i<50 ; i++){
+            System.out.print(" ");
+            try {Thread.sleep(100);} 
+            catch (InterruptedException ie) {}
+        }
+        System.out.println("¡La Tarjeta de Credito fue creada con exito!");       
+    }
 
+    public void mostrarTC(){
 
-        //System.out.println("\nCreando TarjetaCredito...");
-        //setFechaExpedicion(ingreso.nextInt(), ingreso.nextInt(), ingreso.nextInt());        
     }
 }
