@@ -61,7 +61,7 @@ public class Tarjeta_Credito {
     
     // getter/setter de fecha de expiracion
     public String getFechaExpiracion(){
-        return this.fechaExpiracion;
+        return this.fechaExpiracion.substring(3, 10);
     }
     public void setFechaExpiracion(String fechaExpiracion){
         String dia,mes,anio;
@@ -169,11 +169,6 @@ public class Tarjeta_Credito {
     
     public void crearTC() {
         Scanner ingreso = new Scanner(System.in);
-        String nombre;
-        String numeroTC;
-        String fechaExpericacioString;
-        String fechaExpiracionString;
-        String CVV;
 
         //ingresar banco
         System.out.println("Ingrese el nombre de su banco");
@@ -187,32 +182,27 @@ public class Tarjeta_Credito {
 
         //ingresar nombre
         System.out.println("Ingrese el nombre del titular de la tarjeta");
-        nombre = ingreso.nextLine();
-        setNombreUsuario(nombre);
+        setNombreUsuario(ingreso.nextLine());
         System.out.println(getNombreUsuario());
 
         //ingresar numero de tarjeta 
         System.out.println("Ingrese el numero de su tarjeta");
-        numeroTC = ingreso.nextLine();
-        setNumeroTarjeta(numeroTC);
+        setNumeroTarjeta(ingreso.nextLine());
         System.out.println(getNumeroTarjeta());
 
         //ingresar fecha de expedicion 
         System.out.println("Ingrese el año de expedicion de su tarjeta");
-        fechaExpericacioString = ingreso.nextLine();
-        setFechaExpedicion(fechaExpericacioString);
+        setFechaExpedicion(ingreso.nextLine());
         System.out.println(getFechaExpedicion());
 
         //ingresar fecha de expiracion
         System.out.println("Ingrese la fecha de expiracion de su tarjeta en el siguiente formato (mm/aa) o (dd/mm/aa)");
-        fechaExpiracionString = ingreso.nextLine();
-        setFechaExpiracion(fechaExpiracionString);
+        setFechaExpiracion(ingreso.nextLine());
         System.out.println(getFechaExpiracion());
 
         //ingreso codigo CVV
         System.out.println("Ingrese el codigo cvv de la tarjeta:");
-        CVV = ingreso.nextLine();
-        setCVV(CVV);
+        setCVV(ingreso.nextLine());
         System.out.println(getCVV());
 
         System.out.println("\nCreando TarjetaCredito...");
@@ -225,6 +215,23 @@ public class Tarjeta_Credito {
     }
 
     public void mostrarTC(){
-
+        System.out.println("frente");
+        System.out.println("----------------------------------------------");
+        System.out.println("| "+getBanco()+"                            "+getTipoTC()+"  |");
+        System.out.println("|                                            |");
+        System.out.println("| "+getNombreUsuario()+"                              |");
+        System.out.println("| "+getFechaExpedicion()+"                              "+getFechaExpiracion()+"  |");
+        System.out.println("|                                            |");
+        System.out.println("|             "+getNumeroTarjeta()+"            |");
+        System.out.println("----------------------------------------------");
+        System.out.println("\nreverso");
+        System.out.println("----------------------------------------------");
+        System.out.println("|                                            |");
+        System.out.println("|////////////////////////////////////////////|");
+        System.out.println("|  *                                         |");
+        System.out.println("|  * *                                       |");
+        System.out.println("|  * * *                               "+getCVV()+"   |");
+        System.out.println("|        SanaSana             Multicines     |");
+        System.out.println("----------------------------------------------");
     }
 }

@@ -1,23 +1,25 @@
 import java.util.Scanner;
 public class AppTC {
     public static void main(String[] args) {
-        System.out.println("\n Tarjeta de credito");
+        Tarjeta_Credito tarjeta = new Tarjeta_Credito();
         Scanner ingreso = new Scanner(System.in);
         int opcion=0;
+        System.out.println("\n Tarjeta de credito");
             do {
                 System.out.println("\n1. Crear una tarjeta.");
-                System.out.println("2. Mostrar tarjeta.");   
+                System.out.println("2. Mostrar tarjeta.");  
+                System.out.println("3. Salir"); 
                 System.out.print("Ingrese la opción: ");
                 if (ingreso.hasNextInt()) {     
                 opcion = ingreso.nextInt();           
                 switch (opcion) {
                     case 1:
                         System.out.println("Seleccionaste crear una tarjeta.");
-                        Tarjeta_Credito tarjeta = new Tarjeta_Credito();
                         tarjeta.crearTC();
                         break;
                     case 2:
-                        System.out.println("Seleccionaste Mostrar tarjeta.");
+                        System.out.println("Seleccionaste mostrar tarjeta.");
+                        tarjeta.mostrarTC();
                         break;
                     case 3:
                         System.out.println("Saliendo...");
