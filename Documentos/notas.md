@@ -126,9 +126,6 @@ unificar una rama: *git merge*
 craer
  una rama: *git branch*
 
-
-
-
 ## Comandos terminal y git
 
 - acceder a todos los directorios: ls
@@ -150,8 +147,8 @@ craer
 
 - cambiar el nombre de la rama: git branch -m main
 
-- borrar una rama: git push origin :branchName 
-    main serea la rama principal del proyecto 
+- borrar una rama: git push origin :branchName
+    main serea la rama principal del proyecto
 
 - crear commits(toma fotografias de cada avance): git commit -m "Este es mi commit Nro"
 
@@ -174,22 +171,15 @@ craer
 
 - sin realizar una fotografia ver lo que ha ido cambiando: git diff
 
-para ir al final de la rama: 
-
-
- 
-
-
+para ir al final de la rama:
 
 # Clase 4
 
 *Fecha: 13/11/2023*
 
-
 # Clase 4
 
  *Fecha: 13/11/2023*
-
 
 # Clase 5
 
@@ -227,4 +217,161 @@ instancia= {crear -> utilizar un constructor - new(luego llamarlo, new lo llama)
 
 - recolector de basura esta encargado de limpiar la ram
 
--
+# Clase
+
+*06/12*
+
+- Clase pública: para que el computador lo pueda ver.
+
+- Código:
+
+public class TarjetaCredito{   //en singular
+
+  //propiedades de tipo privado ya que si fuese público esto crearía que pudiesen cambiar su valor (private es un nivel de protección)
+
+  //luego se generará un canal para darle el nivel de acceso
+
+  //declaración de variables y nombre completo
+
+  //camelCase
+
+  private String nombreUsuario;
+
+  private String numeroTarjeta;
+
+  private String dato;
+
+  private String clave; //falta el get y el set
+
+  private Date; //almacenar una fecha y hacer get y set
+
+// string.format(“mm/yy”, fecha)
+
+  //getter setter
+
+//showTC(); para mostrar
+
+   public void setDato(String Dato){
+
+      if(Dato.length > 0)
+
+         if(Dato.equals(“xyz”))
+
+            this.dato = dato;
+ }
+
+public void getDato(){
+   return dato.upperCase().substring(4);
+}
+
+//Metodos
+
+public String cambiarClave(String claveAnterior, String claveNueva String ClaveNuevaReescribir){
+    
+    String observación = “”;
+    
+    if(!claveAnterior.equals(getClave())){
+    
+      observación += “Clave anterior no es igual \n”;
+
+}
+
+if(!claveNueva.equals(ClaveNuevaReescribir)){
+
+    observación+= “clave nueva no coincide”;
+
+}
+
+
+//le dice que la clave está bien y que cambie la clave
+
+if(observación .equals(“ ”)){
+
+  setClave(claveNueva);
+
+}
+
+
+//operador ternario
+
+return (observación.equals(“ ”)? “ok” : observacion);
+
+}
+
+/**regla de negocios: cada empresa tienen sus reglas
+ * set: todo lo que ingresará (colocar)
+ * get: trabajar la lectura del valor (traer)
+ * sout (TarjetaCredito.getDato ()); es equivalente a sout(TarjetaCredito);
+ * TarjetaCredito.setDato(“”) equivalente a TarjetaCredito = = “toma”;
+*/
+
+}
+// método:
+
+ retirar(cantidad)
+
+ cambiarClase (claveAnterior , claveNueva)
+
+ pagar(cantidad, localidad)
+
+# Clase:
+
+07/12
+UML
+## 1.- use case: 
+Es el lugar donde estarán los objetos (ayudará a graficar). Procesos de negocios/módulos (acciones)
+
+
+
+
+Flecha hacia la izquierda dice que primero se ejecuta el anterior y luego el que apunta 
+
+Flecha hacia la derecha primero el anterior y luego el que le apunta la flecha 
+
+Flecha cerrada indica jerarquía
+
+Para empezar con el modelado primero se debe conocer a detalle el problema a solucionar 
+
+Ejemplo:
+
+Supermaxi requiere que las compras de sus clientes se paguen con 
+tarjeta de crédito insitu con datafast 
+
+- buscar un actor: supermaxi, clientes (todos los actores de representan con un muñeco) 
+
+- use case: mapea procesos (ir, ar, er)
+UC01 //etiquetas 
+
+
+Finalidad de los use case es entender el proceso, el giro de un negocio 
+
+El dibujo es el camino a seguir 
+
+## 2.- Diagrama de clase 
+
+¿Como se representa una clase?
+￼
+Para representar relaciones entre las clases se tiene también flechas 
+
+Cuando se programa todo lo representado se pasará a código 
+
+En programación orientada a objetos todo es un objeto 
+￼
+
+## 3- herencia 
+
+Son los “hijos” de la clase 
+
+Todo lo que tenga el “padre” lo tendrán los hijos 
+
+La clase hijos utiliza la herencia para heredar características comunes de la clase padre
+
+Representación de herencia 
+
+￼
+"+" : public
+
+"-" : private
+
+"#" : protected 
+
