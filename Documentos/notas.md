@@ -416,7 +416,7 @@ Cliente c = new Cliente(definir con que saldrá o iniciará el constructor);
 
 - Lectura clase padre a clase hija es especificación 
 
-Primero se crea la clase padre y después la clase hija al instancia 
+Primero se crea la clase padre y después la clase hija al instanciar 
 
 # Clase 
 
@@ -442,10 +442,18 @@ Primero se crea la clase padre y después la clase hija al instancia
 
 - **No funcionales:** todo lo que no pedirá la empresa pero debe estar presente. Por ejemplo: la seguridad del software, que permita escalar el software (que el software permita aumentar la cantidad de usuarios por ejemplo)
 
+-----------------
+
 Deber: 
+
+
 diagrama caso de uso
+
 Diagrama de clases 
+
 Código  
+
+------------------
 
 - En Java no hay librerías hay apis 
 
