@@ -366,8 +366,7 @@ Todo lo que tenga el “padre” lo tendrán los hijos
 
 La clase hijos utiliza la herencia para heredar características comunes de la clase padre
 
-Representación de herencia 
-
+Representación de herencia
 ￼
 "+" : public
 
@@ -375,3 +374,237 @@ Representación de herencia
 
 "#" : protected 
 
+# Clase: 
+
+*12/12*
+
+Deber tarjeta: 
+
+Clases:    
+
+- Usar método show 
+
+- String format controlar longitud 
+
+# Clase:
+
+*13/12*
+
+￼
+
+￼
+
+￼
+
+Empezar con las clases dependientes 
+
+Para incitar los get/setter 
+
+Seleccionar los atributos y presionar en el foco para colocar los getter/setter 
+
+**Constructor vacío:** inicializa las variables con “” y sirve para que no se le pase nada y después en un segundo momento se le pueda pasar parámetros 
+
+**new** significa crear un nuevo espacio de memoria 
+
+Cliente c = new Cliente(definir con que saldrá o iniciará el constructor);
+
+**Polimorfismo**: múltiples formas (mismo nombre, puede contener los mismos parámetros pero puede hacer sus propias cosas) tener comportamientos de acuerdo a los parámetros 
+
+**Polimorfismo+sobrecarga** (poténcializa al poli) (que es sobrecarga: ligado a los parámetros)
+
+- Lectura clase hija a clase padre es generalizar 
+
+- Lectura clase padre a clase hija es especificación 
+
+Primero se crea la clase padre y después la clase hija al instancia 
+
+# Clase 
+
+*14/12*
+
+- **Abstracción**(visión opaca y genérica del problema): nivel de conceptualización básico
+
+—>conforme se sigue creando clases se puede ir teniendo más detalles del objeto 
+
+￼
+
+- **Paquetes:** librerías (empaquetar librerías) 
+
+**Actores:**
+
+- interactúa con el sistema 
+
+- puede ser una persona u otro sistema 
+
+**Requerimientos:**
+
+- **Funcionales:** por lo general lo que la empresa dará y desea que se haga 
+
+- **No funcionales:** todo lo que no pedirá la empresa pero debe estar presente. Por ejemplo: la seguridad del software, que permita escalar el software (que el software permita aumentar la cantidad de usuarios por ejemplo)
+
+Deber: 
+diagrama caso de uso
+Diagrama de clases 
+Código  
+
+- En Java no hay librerías hay apis 
+
+- Tipos de datos no primitivos son aquellos formados de otro tipo de datos 
+
+- Una biblioteca se conforma de métodos 
+
+- **CompareTo**: devuelve un entero al comparar dos strings (devuelve la cantidad de caracteres iguales en ambas cadenas) 
+
+# Clase 
+
+*18/12*
+
+- **Corrección**: la fecha de include debe apuntar 
+
+Otros dispositivos van como actores(aquellos que solo ayudarán a entender el contexto) 
+
+Boundary con cuadrados que ayudan a delimitar hasta donde llega la solución
+
+Las clases hijas solo se pueden extender de una clase padre 
+
+￼
+
+Un segmento es una figura 
+
+“es una/es un/son” para representar la relación de las hijas con el padre 
+
+Será raro cuando se ocupe al papá para actuar 
+
+￼
+
+El **borrar()** se encuentra en ambas clases hijas porque no es lo mismo borrar un segmento que un circulo (esto se llama poliformismo) 
+Polimosfirmo es la particularidad de especificar el mismo método del padre en el hijo 
+
+- **Sobrecarga**: ligado al tema de los parámetros (en el ejemplo anterior puede existir un borrar con parámetros y otro sin parámetros; eso se conoce como sobrecarga). También quiere decir que si por un lado de tiene polimosfirmo también se puede tener sobrecarga 
+- **Encapsulacion o abstracción**: solo interesa que al momento de llamar al método este se pueda realizar independientemente de si se usó polimorfismo u otras cosas 
+
+- **Polimorfismo** se lo llama sobre escribir, que dejes de lado el método del papa y tomes el del hijo 
+
+- **Renderizar** de los objetos: es dibujar 
+
+- **Drag en drop**: arrastrar y soltar 
+
+- Si no se tiene un constructor la máquina virtual de Java se encarga de crearlo, por lo que si funciona la línea de código en la que si se instancia la clase 
+
+- Cuando se tiene clases hijas toma relevancia el constructor 
+
+- Si la clase hija no tiene constructor, primero requiere que el padre tenga un constructor y con parámetros
+
+- Si la clase hija no tiene constructor y la clase padre tiene constructor vacío entonces se podrá ejecutar la línea new (la instanciacion) 
+
+- La máquina virtual de Java (JVM) solo pone el constructor cuando no se ha definido nada 
+
+- Si está vacío el constructor quiere decir que no tiene ningún parámetro 
+
+- Segmento s2; //se ejecuta porque solo está declarando una variable de tipo segmento 
+
+- **Súper()** si está con un parámetro llamará al constructor del padre con un parámetro, si tiene dos parámetros llamará al constructor del padre con dos parámetros
+
+- En las clases hijas el constructor puede empezar vacío pero el súper() llama la cantidad de parámetros de cualquier constructor del padre 
+
+- Un constructor vacío facilita la creación del objeto (pero deja la puerta abierta a no tener ningún parámetro y si se le pasa parámetros imprimirá nulo porque el contractor no tiene ninguno)
+
+- Shitf+Crl+P + create
+
+- Shift Crtl V 
+
+- Super pasa los parámetros a la clase padre
+
+- Presentar diagrama caso de uso , clase y programa 
+
+- Menú 
+
+- Actor: jugador 
+
+# Clase 
+
+**19/12**
+ 
+- Cuando un constructor tiene múltiples parámetros se llama sobrecarga 
+
+- Para ejecutar un control hijo y el del papá igual se lo hacer
+
+- Constructor padre: 
+
+      public padre (){}
+
+      //Método padre: 
+
+      bailar()
+
+- Constructor hijo:
+
+      public hijo(){
+
+      //bailar padre, esta llamando al padre 
+
+      súper.bailar()
+
+      //bailar hijo 
+
+      bailar()
+
+      //llamar directamente al padre si tiene diferente nombre…ejemplo:
+  
+      stop();
+
+      }
+
+      //metodo
+
+**@Override:** esto indica que está sobre escribiendo el bailar() del padre
+
+      public void bailar(){
+   
+      Sout (“Hijo bailando”)
+      
+      }
+
+      //aquí no es necesario colocar un override ya que solo existe un método con parámetros y está en el hijo 
+      
+      public void bailar(String genero ){
+   
+      Sout (“Hijo bailando”+genero)
+
+      }
+
+**@Override**: Para sobre escribir el método del papa
+
+- Sobre carga el método es darle más parámetros 
+
+- No se válida el nombre de un parámetro, sino el tipo de parámetro (esto en un ejemplo de sobre escritura) 
+
+- Paquete es aquel que empaqueta varias clases (abreviación pk) 
+
+- Crl+p + escribir package + nombre
+
+En el main llamarlo 
+
+- Antes del class, es “.Clase” para llamar una sola clase del paquete: import pkUtilitario.Animal;
+
+- Para llamar a todo el paquete: import pkUtilitario.*;
+
+- En el main: Animal a = new Animal();
+
+# Clase
+
+**20/12/2023**
+
+final —> estático, constante (variables)
+
+final int 
+
+Constantes en java llevan su nombre en mayúsculas 
+
+# Semana
+
+**del 26 al 01 Enero** semana da vacaciones
+
+# Clase
+
+**02/01/2024**
