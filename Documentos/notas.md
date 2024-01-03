@@ -613,6 +613,14 @@ Constantes en java llevan su nombre en mayúsculas
 
 **del 26 al 01 Enero** semana da vacaciones
 
+- ***Operadores Ternarios***: sirve como un if, arrojan valores verdaderos o falsos
+
+ej:
+
+variable = (condicion) ? valor_sies_verdadero : valor_sies_falso
+
+- ***ArraysList***: 
+
 # Clase
 
 **02/01/2024**

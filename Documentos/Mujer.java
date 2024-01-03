@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Mujer{
     //atributos de clase mujer
     public String nombre;
@@ -23,14 +25,15 @@ public class Mujer{
     } 
 
     public void saludarMujer(){
+        //Scanner sc = new Scanner(System.in);
         System.out.println("Hola, soy una mujer y me llamo " + nombre);
         
         System.out.println("¿Cual es tu nombre?");
-        String nombre = App.scApp.nextLine();
+        String nombre = ((Scanner) App.sc).nextLine();
         System.out.println("Binvenido a mu casa: "+nombre);
 
         System.out.println("¿Cual es tu edad?");
-        edad = sc.nextLine();
+        edad = ((Scanner) App.sc).nextInt();
         System.out.println("Tu edad es: "+edad);
 
         int resto = edad % 3;

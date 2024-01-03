@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class App {
+    public static Object sc;
     Mujer oMujer1, oMujer2;
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         //creamos un objeto de la clase llamda "oMujer1"
         int a;
         Mujer oMujer1; //Esto se refiere a declaración, no quiere decir que ha creado el objeto
