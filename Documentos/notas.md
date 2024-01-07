@@ -629,7 +629,7 @@ Constantes en java llevan su nombre en mayúsculas
 
 # Semana
 
-**del 26 al 01 Enero** semana da vacaciones
+**del 25 al 01 Enero** semana da vacaciones
 
 - ***Operadores Ternarios***: sirve como un if, arrojan valores verdaderos o falsos
 
