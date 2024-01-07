@@ -1,3 +1,16 @@
+# Clase 0
+
+*fecha: 06/11/2023*
+
+
+Presentacion del docente.
+
+# Clase 1
+
+*fecha: 07/11/2023*
+
+Introducción a los temas que se tratarán. 
+
 # Clase 2
 
 *fecha: 08/11/2023*
@@ -177,10 +190,6 @@ para ir al final de la rama:
 
 *Fecha: 13/11/2023*
 
-# Clase 4
-
- *Fecha: 13/11/2023*
-
 # Clase 5
 
  *Fecha: 14/11/2023*
@@ -194,8 +203,11 @@ Tiene tres posibilidades que son: public (para todos, todos lo pueden ver, tiene
                                  private   (solo "yo")
 
 ---------
+# Clase 
 
-# Clase 6
+*15/11/2023*
+
+# Clase 
 
 *16/11/2023*
 *crear por medio del constructor
@@ -219,7 +231,19 @@ instancia= {crear -> utilizar un constructor - new(luego llamarlo, new lo llama)
 
 # Clase
 
-*06/12*
+*20/11/2023*
+
+# Clase 
+
+*21/11/2023*
+
+# Conferencia
+
+**Semana:** *22/11/2023 al 24/11/2023*
+
+# Clase 7
+
+*06/12/2023*
 
 - Clase pública: para que el computador lo pueda ver.
 
@@ -316,13 +340,13 @@ return (observación.equals(“ ”)? “ok” : observacion);
 
 # Clase:
 
-07/12
+*07/12/2023*
+
 UML
+
 ## 1.- use case: 
+
 Es el lugar donde estarán los objetos (ayudará a graficar). Procesos de negocios/módulos (acciones)
-
-
-
 
 Flecha hacia la izquierda dice que primero se ejecuta el anterior y luego el que apunta 
 
@@ -376,7 +400,7 @@ Representación de herencia
 
 # Clase: 
 
-*12/12*
+*12/12/2023*
 
 Deber tarjeta: 
 
@@ -388,13 +412,7 @@ Clases:
 
 # Clase:
 
-*13/12*
-
-￼
-
-￼
-
-￼
+*13/12/2023*
 
 Empezar con las clases dependientes 
 
@@ -420,7 +438,7 @@ Primero se crea la clase padre y después la clase hija al instanciar
 
 # Clase 
 
-*14/12*
+*14/12/2023*
 
 - **Abstracción**(visión opaca y genérica del problema): nivel de conceptualización básico
 
@@ -465,7 +483,7 @@ Código
 
 # Clase 
 
-*18/12*
+*18/12/2023*
 
 - **Corrección**: la fecha de include debe apuntar 
 
@@ -531,7 +549,7 @@ Polimosfirmo es la particularidad de especificar el mismo método del padre en e
 
 # Clase 
 
-**19/12**
+*19/12/2023*
  
 - Cuando un constructor tiene múltiples parámetros se llama sobrecarga 
 
@@ -601,7 +619,7 @@ En el main llamarlo
 
 # Clase
 
-**20/12/2023**
+*20/12/2023*
 
 final —> estático, constante (variables)
 
@@ -623,4 +641,68 @@ variable = (condicion) ? valor_sies_verdadero : valor_sies_falso
 
 # Clase
 
-**02/01/2024**
+*02/01/2024*
+
+Revisión de la prueba.
+
+Crear y guardar archivos de texto.
+
+# Clase:
+
+*03/01/2024*
+
+- Interfase siempre de denota con una “I” mayúscula al inicio 
+
+- La interfase permite describir comportamientos traducido a operaciones/comportamientos 
+
+- Las operaciones se “heredan” también en las interfases 
+
+- Se le llama un “contrato”, es una obligación, cuando se implemente en la interfaz hija va a cumplir lo del padre 
+
+- Interface solo define la operaciones en la interfaz padre no pone nada de código solo se define el método. Y en la interfaz hija se implementa y se ingresa código (es obligatorio) 
+
+- En herencia se instancia pero en interfaces no se instancia, es decir, no se hace: Ip ip = new Ip();
+
+-Fomenta el polimorfismo 
+
+- La implementación debe darse con el número de métodos 
+
+- Permiten y generan conexiones 
+
+- Interface también se llama **realización**
+
+- Es una línea con flecha entre cortada 
+
+- También se puede colocar propiedades, pero estas se crean como constantes (automáticamente). En cambio, al heredad la clase padre debe tener “final static” para poder colocar una constante.  
+
+Código :
+
+![Alt text](image.png)
+
+- clase abstracta: si tiene código, colocar la palabra abstract, ej : public abstract class. Colocar esto dice que se debe heredar obligatoriamente. Se usa cuando se tiene un código base y se quiere que herede (no crea objetos, no crea la clase padre, sino a las hijas que obligatoriamente heredan) 
+￼
+
+- H : hereda 
+
+- i : implementa 
+
+Operaciones básicas de una base de datos:
+
+- crud : guardar 
+
+- keep
+
+-----------------
+Para el examen:
+
+Arraist 
+
+Archivos de texto: leer, guardar y mostra
+
+-----------------
+
+# Clase 
+
+*04/01/2024*
+
+Examen Bimestral
