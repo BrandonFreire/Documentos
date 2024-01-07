@@ -5,13 +5,13 @@
 
 Presentacion del docente.
 
-# Clase 1
+# Clase 
 
 *fecha: 07/11/2023*
 
 Introducción a los temas que se tratarán. 
 
-# Clase 2
+# Clase 
 
 *fecha: 08/11/2023*
 
@@ -53,7 +53,7 @@ markdown
 ------------------------------------------------------------
 ------------------------------------------------------------
 
-# Clase 3
+# Clase 
 
 *09/11/2023*
 
@@ -186,11 +186,11 @@ craer
 
 para ir al final de la rama:
 
-# Clase 4
+# Clase 
 
 *Fecha: 13/11/2023*
 
-# Clase 5
+# Clase 
 
  *Fecha: 14/11/2023*
 
@@ -241,7 +241,7 @@ instancia= {crear -> utilizar un constructor - new(luego llamarlo, new lo llama)
 
 **Semana:** *22/11/2023 al 24/11/2023*
 
-# Clase 7
+# Clase 
 
 *06/12/2023*
 
