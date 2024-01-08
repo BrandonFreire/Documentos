@@ -1,18 +1,18 @@
 # Clase 0
 
-*fecha: 06/11/2023*
+*06/11/2023*
 
 Presentacion del docente.
 
 # Clase 1
 
-*fecha: 07/11/2023*
+*07/11/2023*
 
 Introducción a los temas que se tratarán.
 
 # Clase 2
 
-*fecha: 08/11/2023*
+*08/11/2023*
 
 1. Abrir terminal
 2. windows:             CTRL+SHIFT+P
