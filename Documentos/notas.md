@@ -455,6 +455,8 @@ UML
 
 - Es el lugar donde estarán los objetos (ayudará a graficar). Procesos de negocios/módulos (acciones)
 
+![Alt text](image-15.png)
+
 - Flecha hacia la izquierda dice que primero se ejecuta el anterior y luego el que apunta
 
 - Flecha hacia la derecha primero el anterior y luego el que le apunta la flecha
@@ -465,13 +467,15 @@ UML
 
 **Ejemplo:**
 
-Supermaxi requiere que las compras de sus clientes se paguen con
-tarjeta de crédito insitu con datafast
+Supermaxi requiere que las compras de sus clientes se paguen con tarjeta de crédito insitu con datafast
 
 - buscar un actor: supermaxi, clientes (todos los actores de representan con un muñeco)
 
 - use case: mapea procesos (ir, ar, er)
+
 UC01 //etiquetas
+
+![Alt text](image-14.png)
 
 Finalidad de los use case es entender el proceso, el giro de un negocio
 
@@ -480,13 +484,16 @@ El dibujo es el camino a seguir
 ## 2.- Diagrama de clase
 
 ¿Como se representa una clase?
-￼
+
+![Alt text](image-13.png)
+
 Para representar relaciones entre las clases se tiene también flechas
 
 Cuando se programa todo lo representado se pasará a código
 
 En programación orientada a objetos todo es un objeto
-￼
+
+![Alt text](image-12.png)
 
 ## 3- herencia
 
@@ -497,12 +504,14 @@ Todo lo que tenga el “padre” lo tendrán los hijos
 La clase hijos utiliza la herencia para heredar características comunes de la clase padre
 
 Representación de herencia
-￼
+
 "+" : public
 
 "-" : private
 
 "#" : protected
+
+![Alt text](image-11.png)
 
 # Clase 17
 
@@ -525,6 +534,10 @@ Clases:
 # Clase 19
 
 *13/12/2023*
+
+![Alt text](image-9.png)
+
+![Alt text](image-10.png)
 
 Empezar con las clases dependientes
 
@@ -560,7 +573,7 @@ Primero se crea la clase padre y después la clase hija al instanciar
 
 —>conforme se sigue creando clases se puede ir teniendo más detalles del objeto
 
-￼
+![Alt text](image-7.png)
 
 - **Paquetes:** librerías (empaquetar librerías)
 
@@ -608,7 +621,7 @@ Boundary con cuadrados que ayudan a delimitar hasta donde llega la solución
 
 Las clases hijas solo se pueden extender de una clase padre
 
-￼
+![Alt text](image-5.png)
 
 Un segmento es una figura
 
@@ -616,7 +629,7 @@ Un segmento es una figura
 
 Será raro cuando se ocupe al papá para actuar
 
-￼
+![Alt text](image-6.png)
 
 El **borrar()** se encuentra en ambas clases hijas porque no es lo mismo borrar un segmento que un circulo (esto se llama poliformismo)
 Polimosfirmo es la particularidad de especificar el mismo método del padre en el hijo
