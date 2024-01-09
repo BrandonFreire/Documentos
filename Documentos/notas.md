@@ -200,11 +200,54 @@ craer
 
 - subir todos los cambios al repositorio: ***git push origin master***
 
-# Clase
+# Clase 4
 
 *Fecha: 13/11/2023*
 
-# Clase
+- Antes de cambiarse de rama, en el git hacemos un **git status** para saber si podemos perder alguna actualizacion de informacion.
+
+- Si se realiza cambios sin guardar es posible volver a la anterior rama y recuperarlo
+
+Para crear un archivo de java debe cumplir dos condiciones
+
+1. Debe comenzar con mayuscula
+
+2. La clase debe tener el mismo nombre del archivo
+
+***.Git merge***: ayuda a unificar las ramas
+
+***echo Hi_Ismael> "java"*** ayuda a crear el archivo y darle la extension que necesito 
+
+- Al final subir toda a git hub para que no se pierda la informacion reciente, esto es posible con un ***git push***
+
+- Para subir la info a Github se usa:
+
+ ***git push -u*** y la direccion de nuestro git hub
+
+**Ejemplo:**
+
+    git push -u https://github.com/Ismael-18/clases.git
+
+* Usos de Java
+
+1. Desarrollo de videojuegos
+
+2. Realidad virtual
+
+3. Desarrollo web
+
+4. Desarrollo de Apps moviles
+
+* Empresas que lo usan usan
+
+1. Netflix
+
+2. Twitter
+
+3. Netflix
+
+
+# Clase 5
 
  *Fecha: 14/11/2023*
 
@@ -228,13 +271,13 @@ Tiene tres posibilidades que son: public (para todos, todos lo pueden ver, tiene
 
 ---------
 
-# Clase
+# Clase 
 
 *15/11/2023*
 
 ***Actividad, Evento de Bienvenida 2023B en el teatro Politecnico***
 
-# Clase
+# Clase 6
 
 *16/11/2023*
 
@@ -267,15 +310,11 @@ instancia = {crear -> utilizar un constructor - new(luego llamarlo, new lo llama
 
 - recolector de basura esta encargado de limpiar la ram
 
-# Clase 
-
-*17/11/2023*
-
-# Clase
+# Clase 7
 
 *20/11/2023*
 
-# Clase
+# Clase 8
 
 *21/11/2023*
 
@@ -283,39 +322,31 @@ instancia = {crear -> utilizar un constructor - new(luego llamarlo, new lo llama
 
 **Semana:** *22/11/2023 al 24/11/2023*
 
-# Clase 
+# Clase 9
 
 *27/11/2023*
 
-# Clase 
+# Clase 10
 
 *28/11/2023*
 
-# Clase 
+# Clase 11
 
 *29/11/2023*
 
-# Clase 
-
-*29/11/2023*
-
-# Clase 
+# Clase 12
 
 *30/11/2023*
 
-# Clase 
-
-*01/11/2023*
-
-# Clase 
+# Clase 13 
 
 *04/12/2023*
 
-# Clase 
+# Clase 14
 
 *05/12/2023*
 
-# Clase
+# Clase 15
 
 *06/12/2023*
 
@@ -414,7 +445,7 @@ pagar(cantidad, localidad)
 
 ```
 
-# Clase
+# Clase 16
 
 *07/12/2023*
 
@@ -473,17 +504,13 @@ Representación de herencia
 
 "#" : protected
 
-# Clase 
-
-*08/12/2023*
-
-# Clase 
+# Clase 17
 
 *11/12/2023*
 
 ***Presentacin Poliretos***
 
-# Clase
+# Clase 18
 
 *12/12/2023*
 
@@ -495,7 +522,7 @@ Clases:
 
 - String format controlar longitud
 
-# Clase
+# Clase 19
 
 *13/12/2023*
 
@@ -525,7 +552,7 @@ Cliente c = new Cliente(definir con que saldrá o iniciará el constructor);
 
 Primero se crea la clase padre y después la clase hija al instanciar
 
-# Clase
+# Clase 20
 
 *14/12/2023*
 
@@ -569,11 +596,7 @@ Código
 
 - **CompareTo**: devuelve un entero al comparar dos strings (devuelve la cantidad de caracteres iguales en ambas cadenas)
 
-# Clase 
-
-*15/12/2023*
-
-# Clase
+# Clase 21
 
 *18/12/2023*
 
@@ -639,7 +662,7 @@ Polimosfirmo es la particularidad de especificar el mismo método del padre en e
 
 - Actor: jugador
 
-# Clase
+# Clase 22
 
 *19/12/2023*
 
@@ -716,7 +739,7 @@ En el main llamarlo
 
 - En el main: Animal a = new Animal();
 
-# Clase
+# Clase 23
 
 *20/12/2023*
 
@@ -726,13 +749,11 @@ final int
 
 Constantes en java llevan su nombre en mayúsculas
 
-# Clase 
+# Clase 24
 
 *21/12/2023*
 
-# Clase 
-
-*22/12/2023*
+***Prueba 1***
 
 # Semana
 
@@ -742,11 +763,13 @@ Constantes en java llevan su nombre en mayúsculas
 
 ej:
 
+```js
+
 variable = (condicion) ? valor_sies_verdadero : valor_sies_falso
 
-- ***ArraysList***:
+```
 
-# Clase
+# Clase 25
 
 *02/01/2024*
 
@@ -754,9 +777,15 @@ Revisión de la prueba.
 
 Crear y guardar archivos de texto.
 
-# Clase
+![Alt text](image-4.png)
+
+![Alt text](image-3.png)
+
+# Clase 26
 
 *03/01/2024*
+
+![Alt text](image-2.png)
 
 - Interfase siempre de denota con una “I” mayúscula al inicio
 
@@ -787,7 +816,8 @@ Código :
 ![Alt text](image.png)
 
 - clase abstracta: si tiene código, colocar la palabra abstract, ej : public abstract class. Colocar esto dice que se debe heredar obligatoriamente. Se usa cuando se tiene un código base y se quiere que herede (no crea objetos, no crea la clase padre, sino a las hijas que obligatoriamente heredan)
-￼
+
+![Alt text](image-1.png)
 
 - **H :** hereda
 
@@ -808,7 +838,7 @@ Archivos de texto: leer, guardar y mostra
 
 -----------------
 
-# Clase
+# Clase 27
 
 *04/01/2024*
 
