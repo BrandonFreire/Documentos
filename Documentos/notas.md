@@ -932,6 +932,8 @@ Representación de herencia
 
 *12/12/2023*
 
+Explicacion del deber tarjeta de credito
+
 Deber tarjeta:
 
 Clases:
@@ -1179,13 +1181,15 @@ Constantes en java llevan su nombre en mayúsculas
 
 # Semana
 
-**del 25 al 01 Enero** semana da vacaciones
+***del 25 al 01 Enerosemana da vacaciones***
+
+- Repaso:
 
 - ***Operadores Ternarios***: sirve como un if, arrojan valores verdaderos o falsos
 
-ej:
-
 ```js
+
+// ejemplo:
 
 variable = (condicion) ? valor_sies_verdadero : valor_sies_falso
 
