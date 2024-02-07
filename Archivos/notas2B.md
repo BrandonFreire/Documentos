@@ -183,3 +183,15 @@ Pk      Fk         Fk
 3    |  1109  |     4     |       |
 4    |  1102  |     2     |  9am  | 2000
 5    |  1102  |     3     |  10am | 2014
+
+
+# Clase
+
+*07/06/2024*
+
+Las entidaddes son sutantivos, no puede ser plural 
+
+Se debe tener una carpeta donde estan los scripts(es en donde se crea toda la base de datos)
+
+para el borrado: primero se elimina el hijo y luego al padre
+para crear: primero se crea el padre y luego el hijo
