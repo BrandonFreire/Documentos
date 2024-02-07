@@ -96,7 +96,7 @@ cedula | nomre | apellido | edad
 
 tabla detalle (relacion 1 a muchos):
 
-- en el campo que se repite se le llama *"Fk : for and key"*
+- en el campo que se repite se le llama *"Fk : foreign key"*
 
     Pk           Fk
 idMascota | cedPersona | nomre  |   apodo   | edad
