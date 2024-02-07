@@ -40,3 +40,7 @@ CREATE TABLE Persona (
     ,FechaCrea      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+SELECT * FROM  IABot;
+SELECT * FROM   ExaBot;
+SELECT * FROM    PersonaTipo;
+SELECT * FROM      Persona;
