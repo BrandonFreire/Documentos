@@ -3,6 +3,7 @@ CopyRight
 autor:
 fecha:
 */
+
 DROP TABLE IF EXISTS IABot;
 DROP TABLE IF EXISTS ExaBot;
 DROP TABLE IF EXISTS Persona;
@@ -24,20 +25,25 @@ CREATE TABLE ExaBot (
 );
 
 CREATE TABLE PersonaTipo (
-    idPersonaTipo   INTEGER PRIMARY KEY AUTOINCREMENT
+    IdPersonaTipo   INTEGER PRIMARY KEY AUTOINCREMENT
     ,Descripcion    TEXT NOT NULL
     ,FechaCrea      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Persona (
-    idPersona         INTEGER PRIMARY KEY AUTOINCREMENT
-    ,idPersonaTipo    INTEGER NOT NULL 
-    ,Descripcion      TEXT NOT NULL
+    IdPersona         INTEGER PRIMARY KEY AUTOINCREMENT
+    ,IdPersonaTipo    INTEGER NOT NULL REFERENCES PersonaTipo(IdPersonaTipo)
+    ,Cedula           TEXT NOT NULL UNIQUE
+    ,Nombre           TEXT NOT NULL
     ,FechaCrea        DATETIME DEFAULT CURRENT_TIMESTAMP
-    ,CONSTRAINT fk_PersonaTipo FOREIGN KEY (idPersonaTipo) REFERENCES PersonaTipo(idPersonaTipo) 
-
+    --,CONSTRAINT fk_PersonaTipo FOREIGN KEY (idPersonaTipo) REFERENCES PersonaTipo(idPersonaTipo) 
 );
 
+-- Verificar si la tabla IABot existe
+--SELECT name FROM sqlite_master WHERE type='table' AND name='IABot';
+
+-- Si la tabla existe, ejecutar la consulta
+--SELECT * FROM IABot;
 
 
 
