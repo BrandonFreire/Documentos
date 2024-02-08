@@ -1,3 +1,4 @@
+-- database: ../db/Exobot.sqlite
 INSERT INTO IABot (Nombre, Observacion)
             VALUES ('IABot', '');
 
@@ -27,3 +28,7 @@ SELECT * FROM  IABot;
 SELECT * FROM  ExaBot;
 SELECT * FROM  PersonaTipo;
 SELECT * FROM  Persona;
+
+SELECT Descripcion FROM PersonaTipo WHERE Descripcion LIKE "%o%";
+SELECT Descripcion FROM PersonaTipo WHERE Descripcion LIKE "%o";
+>

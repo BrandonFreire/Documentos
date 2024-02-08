@@ -4,8 +4,9 @@ autor:
 fecha:
 */
 
-DROP TABLE IF EXISTS IABot;
 DROP TABLE IF EXISTS ExaBot;
+DROP TABLE IF EXISTS IABot;
+
 DROP TABLE IF EXISTS Persona;
 DROP TABLE IF EXISTS PersonaTipo;
 
@@ -26,7 +27,7 @@ CREATE TABLE ExaBot (
 
 CREATE TABLE PersonaTipo (
     IdPersonaTipo   INTEGER PRIMARY KEY AUTOINCREMENT
-    ,Descripcion    TEXT NOT NULL
+    ,Descripcion    TEXT NOT NULL UNIQUE
     ,FechaCrea      DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -38,6 +39,11 @@ CREATE TABLE Persona (
     ,FechaCrea        DATETIME DEFAULT CURRENT_TIMESTAMP
     --,CONSTRAINT fk_PersonaTipo FOREIGN KEY (idPersonaTipo) REFERENCES PersonaTipo(idPersonaTipo) 
 );
+
+
+--sentencia para mostrar solo un capo
+-- SELECT *  FROM PersonaTipo WHERE IdPersonaTipo = 2;
+ 
 
 -- Verificar si la tabla IABot existe
 --SELECT name FROM sqlite_master WHERE type='table' AND name='IABot';
