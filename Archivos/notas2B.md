@@ -195,3 +195,27 @@ Se debe tener una carpeta donde estan los scripts(es en donde se crea toda la ba
 
 para el borrado: primero se elimina el hijo y luego al padre
 para crear: primero se crea el padre y luego el hijo
+
+# Clase 
+
+*08/02/2024*
+
+Para poder llenar cada tabla se requiere tener una interface 
+
+¿que se puede hacer para abreviar ciertas cosas?
+
+una sola tabla puede llamarse a si misma, es decir el id de esta tabla se la puede llamar dentro de la misma tabla. Sin embargo, se debe analizar el conexto ya que si por ejemplo es una app para entregas...se debe desglosar la informacion
+
+latencia es como decir "esperar en un sistema" de forma mas tecnica 
+
+**pull**: son todos los usuarios que ingresan 
+
+sentencias para sqlite 
+
+**WHERE** : permite ubicarse en un campo en especifico 
+
+**LIKE** : palabaras que tengan una letra
+
+**LIKE "%o"**
+
+**UNIQUE** : valida que solo debe tener una sola vez un campo. Evite duplicados en un campo
