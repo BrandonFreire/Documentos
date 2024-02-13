@@ -31,4 +31,3 @@ SELECT * FROM  Persona;
 
 SELECT Descripcion FROM PersonaTipo WHERE Descripcion LIKE "%o%";
 SELECT Descripcion FROM PersonaTipo WHERE Descripcion LIKE "%o";
->
